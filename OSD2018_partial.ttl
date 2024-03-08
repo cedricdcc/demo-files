@@ -1,0 +1,442 @@
+
+
+@prefix csvw: <http://www.w3.org/ns/csvw> .
+@prefix schema: <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2014/OSD14Data_version1.csv> 
+	a csvw:table;
+	csvw:schema <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2014/OSD14Metadata_version1.csv>;
+	csvw:columns (		
+		[ a csvw:Column;
+		csvw:name 'SampleID'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'sampleID_ENA'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Campaign'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SiteLabel'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'EventID'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Logsheet'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Objective'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'DateTime'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Latitude'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Longitude'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Depth'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Depth_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Country'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'CoastDistance'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'LME'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'LMEDistance'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'MarineRegion'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'MRGID'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'ENVIRO_Biome'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'ENVIRO_Feature'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'ENVIRO_Material'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'EVENT_device'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_description'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_platform'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Protocol'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Quantity'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Container'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Content'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_FilterUpper'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_FilterLower'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_TreatmentChemicals'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_TreatmentStorage'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'BiosampleAccessionNumber'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'BiosampleAccessionNumber_comment'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SampleAssessionNumber'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SampleAssessionNumber_comment'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Temperature'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Temperature_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Temperature_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Salinity'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Salinity_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Salinity_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'pH'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'pH_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'pH_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'PO43'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'PO43_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'PO43_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'NO3'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'NO3_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'NO3_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'POC'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'POC_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'POC_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'NO2'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'NO2_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'NO2_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'DOC'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'DOC_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'DOC_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'NanoMicroPlankton'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'NanoMicroPlankton_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'NanoMicroPlankton_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'PAR'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'PAR_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'PAR_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Conductivity'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Conductivity_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Conductivity_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'PP_C'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'PP_C_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'PP_C_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Oxygen'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Oxygen_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Oxygen_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'PON'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'PON_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'PON_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'MesoMacroPlankton'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'MesoMacroPlankton_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'MesoMacroPlankton_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'BacterialProduction_C'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'BacterialProduction_C_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'BacterialProduction_C_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'DON'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'DON_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'DON_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'NH4+'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'NH4+_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'NH4+_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SiOH4'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SiOH4_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SiOH4_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Turbidity'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Turbidity_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Turbidity_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Fluorometer'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Fluorometer_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Fluorometer_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Chl_a'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Chl_a_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Chl_a_flag'^^xsd:string ; 
+		] 
+	)
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2014/OSD14Data_version1.csv#OSD1_2014-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD1_2014-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD1_2014-06-21_0m_NPL022'^^xsd:string;
+	schema:identifier 'OSD2014'^^xsd:string;
+	schema:identifier 'OSD1'^^xsd:string;
+	schema:identifier 'OSD1_2014-06'^^xsd:string;
+	schema:URL 'http://store.pangaea.de/Projects/OSD_2014/OSD1_20140621T1110Z.pdf'^^xsd:anyURI;
+	schema:description 'To collect surface seawater on the summer solstice day from the L4 mooring in the Western English Channel (OSD1) and to filter the water using the standardized protocol NPL022. The filters will be sent to Germany and subsequently processed and analysed for the prokariotic fraction. The results will be part of the global campaign OSD data-set which will allow the scientific community to better understand the microbial diversity and function in the light of climate change assessment. The data-set so established will be used as a reference for future studies and the base for developing biotechnologies.'^^xsd:string;
+	schema:DateTime '2014-06-21T11:10:00'^^xsd:datetime;
+	schema:latitude '50.151'^^xsd:double;
+	schema:longitude '-4.13'^^xsd:double;
+	schema:depth '0.0'^^xsd:double;
+	schema:Country 'GBR'^^xsd:string;
+	schema:Distance '17175'^^xsd:integer;
+	schema:location 'Celtic-Biscay Shelf'^^xsd:string;
+	schema:Distance '0'^^xsd:integer;
+	schema:location 'English Channel'^^xsd:string;
+	schema:identifier '2389'^^xsd:integer;
+	schema:location <https://www.marineregions.org/gazetteer.php?p=details&id=2389>;
+	schema:location 'marine pelagic biome ENVO:01000023'^^xsd:string;
+	schema:description 'surface water ENVO:00002042'^^xsd:string;
+	schema:description 'sea water ENVO:00002149'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2014/OSD14Data_version1.csv#OSD1_2014-06_NPL022_1,10%20L%20Niskin%20bottle>;
+	schema:description '20 L of surface seawater (0-2m) were aliquoted and filtered through 5 sterivex cartridge filters using a peristaltic pump.'^^xsd:string;
+	sosa:usedProcedure 'NPL022 (Protocol A)'^^xsd:string;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA3275646>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#ERS667668>;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/TEMP>;
+		qudt:numericValue '16.66'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	];
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/PSAL/>;
+		qudt:numericValue '35.22'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/>;
+	];
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/VSRW/>;
+		qudt:numericValue '734.55'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UM2S/>;
+	];
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/PPRD/>;
+		qudt:numericValue '245.46'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/KGUM/>;
+	];
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/ATTN/>;
+		qudt:numericValue '0.47'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/USTU/>;
+	];
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2014/OSD14Data_version1.csv#OSD1_2014-06_NPL022_1,10%20L%20Niskin%20bottle> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'Research vessel - MBA SEPIA'^^xsd:string;
+.
+
+@prefix csvw: <http://www.w3.org/ns/csvw> .
+@prefix schema: <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2014/OSD14Data_version1.csv#OSD10_2014-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD10_2014-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD10_2014-06-21_1m_NPL022'^^xsd:string;
+	schema:identifier 'OSD2014'^^xsd:string;
+	schema:identifier 'OSD10'^^xsd:string;
+	schema:identifier 'OSD10_2014-06'^^xsd:string;
+	schema:URL 'http://store.pangaea.de/Projects/OSD_2014/OSD10_20140621T2050Z.pdf'^^xsd:anyURI;
+	schema:description 'Collect surface water for OSD from a Laurentian Great Lake'^^xsd:string;
+	schema:DateTime '2014-06-21T20:50:00'^^xsd:datetime;
+	schema:latitude '41.839834'^^xsd:double;
+	schema:longitude '-83.18995'^^xsd:double;
+	schema:depth '1.0'^^xsd:double;
+	schema:Country 'USA'^^xsd:string;
+	schema:Distance '11479'^^xsd:integer;
+	schema:location 'Detroit River / Lake Erie'^^xsd:string;
+	schema:identifier '31873'^^xsd:integer;
+	schema:location <https://www.marineregions.org/gazetteer.php?p=details&id=31873>;
+	schema:location 'Large lake biome ENVO:00000891'^^xsd:string;
+	schema:description 'surface water ENVO:00002042'^^xsd:string;
+	schema:description 'fresh water ENVO:00002011'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2014/OSD14Data_version1.csv#OSD10_2014-06_NPL022_1,20L%20carboy>;
+	schema:description 'Surface water samples from Lake Erie'^^xsd:string;
+	sosa:usedProcedure 'NPL022 (Protocol A)'^^xsd:string;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA3275636>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#ERS667657>;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/TEMP>;
+		qudt:numericValue '22.4'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	];
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/PSAL/>;
+		qudt:numericValue '0.14'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/>;
+	];
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/ALKY/>;
+		qudt:numericValue '8.78'^^xsd:double;
+	];
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/CNDC/>;
+		qudt:numericValue '284.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/MSCM/>;
+	];
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty <http://vocab.nerc.ac.uk/collection/P02/current/CPWC/>;
+		qudt:numericValue '2.06'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UMMC/>;
+	];
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2014/OSD14Data_version1.csv#OSD10_2014-06_NPL022_1,20L%20carboy> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'RV Huron Explorer'^^xsd:string;
+.
